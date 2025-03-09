@@ -51,4 +51,9 @@ app.get('/api/get-credibility', async (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
+    
+});
+
+app.get("/",function(request,response){
+    response.send('Hello World');
 });
